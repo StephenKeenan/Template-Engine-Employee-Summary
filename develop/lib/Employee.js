@@ -1,4 +1,5 @@
 // Defines and exports the Employee class
+
 class Employee {
     constructor (name, id, email, phone) {
         this.name = name; 
