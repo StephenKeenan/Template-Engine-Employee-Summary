@@ -1,6 +1,6 @@
 // Defines and exports the Intern class, inheriting from Employee.
 
-const Employee = require("./lib/Employee");
+const Employee = require("./develop/lib/Employee");
 
 class Engineer extends Employee {
     constructor(name, id, email, github) {
