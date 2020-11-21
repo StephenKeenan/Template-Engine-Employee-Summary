@@ -5,6 +5,11 @@ class Employee {
         this.name = name; 
         this.id = id;
         this.email = email;
+
+        this.getRole = function() {
+            this.role = "Employee";
+            return this.role;
+        }
     }
 
     getName() {
