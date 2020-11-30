@@ -59,17 +59,17 @@ function managerSelection() {
         type: "list",
         name: "selectedOption",
         message: "Please select one of the following choices",
-        choices: ["add intern", "add engineer", "finish building team"],
+        choices: ["Add intern", "Add engineer", "Ginish building team"],
       },
     ])
     .then(function (answers) {
-      if (answers.selectedOption === "add intern") {
+      if (answers.selectedOption === "Add intern") {
         createIntern();
       }
-      if (answers.selectedOption === "add engineer") {
+      if (answers.selectedOption === "Add engineer") {
         createEngineer();
       }
-      if (answers.selectedOption === "finish building team") {
+      if (answers.selectedOption === "Finish building team") {
         // TO DO use our render function to create html file
         console.log(team);
         // After the user has input all employees desired, call the `render` function (required
@@ -161,7 +161,7 @@ function createEngineer() {
         answers.github
       );
       team.push(engineer);
-      console.log("created engineer object", engineer);
+      console.log("Created engineer object", engineer);
       managerSelection();
     });
 }
