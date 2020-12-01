@@ -18,13 +18,13 @@
   When the user runs 'node index.js', they will be prompted to answer several questions about their team. A team.html file will be generated with their responses once they have submitted all of their answers.
 
   ## Contributors
-  Stephen Keenan, with help from Andrew Knowles and Mallory Steffes.
+  Stephen Keenan, with help from Andrew Knowles, tutor.
 
   ## Testing
   npm run test
 
   ## Demonstration
-  None
+  See it in action at https://www.youtube.com/watch?v=FzOv4sTkO0k&feature=youtu.be
 
   ## Questions
   * <https://github.com/StephenKeenan>
