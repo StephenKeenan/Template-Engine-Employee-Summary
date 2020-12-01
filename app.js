@@ -59,7 +59,7 @@ function managerSelection() {
         type: "list",
         name: "selectedOption",
         message: "Please select one of the following choices",
-        choices: ["Add intern", "Add engineer", "Ginish building team"],
+        choices: ["Add intern", "Add engineer", "Finish building team"],
       },
     ])
     .then(function (answers) {
@@ -70,8 +70,9 @@ function managerSelection() {
         createEngineer();
       }
       if (answers.selectedOption === "Finish building team") {
-        // TO DO use our render function to create html file
+        // TO DO use our render function to create html files
         console.log(team);
+        fs.writeFileSync(outputPath, render(team))
         // After the user has input all employees desired, call the `render` function (required
         // above) and pass in an array containing all employee objects; the `render` function will
         // generate and return a block of HTML including templated divs for each employee!
